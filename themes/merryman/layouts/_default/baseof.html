@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ .Site.Params.shortTagline }}">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    <header>
+      <a href="/" class="site-name">{{ .Site.Title }}</a>
+    </header>
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+    <footer>
+      <span class="footer-tagline">{{ .Site.Params.shortTagline }}</span>
+      <span class="footer-contact">
+        <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+      </span>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,3 +1,13 @@
 baseURL = 'https://merrymantechnology.com/'
 languageCode = 'en-us'
 title = 'Merryman Technology'
+theme = 'merryman'
+
+[taxonomies]
+  # No taxonomies for V1 placeholder
+
+[params]
+  tagline     = 'Thoughtful apps for Apple platforms. Built with intention, designed to solve real problems.'
+  shortTagline = 'Thoughtful apps for Apple platforms.'
+  email       = 'blake@merrymantechnology.com'
+  status      = 'Coming Soon'
