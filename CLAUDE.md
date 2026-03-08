@@ -9,7 +9,7 @@ Source for merrymantechnology.com — built with [Hugo](https://gohugo.io/) (v0.
 ## GitHub
 
 - **Org:** `merryman-technology`
-- **Repo:** `website` (private)
+- **Repo:** `Merryman-Technology-Website` (public)
 - **Issue tracking:** GitHub Issues + org-level GitHub Project ("Merryman Technology Roadmap")
 
 ## Common Commands
@@ -44,4 +44,4 @@ The `public/` directory is gitignored — it is generated at build time.
 
 ## Theme
 
-No theme has been selected yet. When one is chosen, install it as a git submodule under `themes/` and set `theme` in `hugo.toml`.
+Custom minimal theme at `themes/merryman/`. Single-page layout: header wordmark, centered hero with tagline, footer with short tagline. All copy is driven by params in `hugo.toml`.
