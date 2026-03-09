@@ -9,4 +9,5 @@ theme = 'merryman'
 [params]
   tagline     = 'Thoughtful apps for Apple platforms. Built with intention, designed to solve real problems.'
   shortTagline = 'Thoughtful apps for Apple platforms.'
-status      = 'Coming Soon'
+  status       = 'Coming Soon'
+  email        = 'hello@merrymantechnology.com'
