@@ -18,6 +18,13 @@
     <footer>
       <span class="footer-tagline">{{ .Site.Params.shortTagline }}</span>
       <span class="footer-contact"><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></span>
+      <span class="footer-social">
+        <a href="{{ .Site.Params.twitterURL }}" target="_blank" rel="noopener">X</a>
+        <span class="footer-social-sep">·</span>
+        <a href="{{ .Site.Params.bskyURL }}" target="_blank" rel="noopener">Bluesky</a>
+        <span class="footer-social-sep">·</span>
+        <a href="{{ .Site.Params.mastodonURL }}" target="_blank" rel="noopener">Mastodon</a>
+      </span>
     </footer>
   </div>
 </body>
