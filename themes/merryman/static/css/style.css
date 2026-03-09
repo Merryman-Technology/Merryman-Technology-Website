@@ -64,20 +64,12 @@ main {
   text-align: center;
 }
 
-.hero h1 {
-  font-size: clamp(0.95rem, 2vw, 1.1rem);
-  font-weight: 400;
-  line-height: 1.6;
-  letter-spacing: -0.01em;
-  color: var(--color-muted);
-}
-
 .hero .status {
-  margin-top: 2rem;
-  font-size: 0.75rem;
+  font-size: clamp(1rem, 3vw, 1.4rem);
+  font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-border);
+  color: var(--color-muted);
 }
 
 /* Footer */
@@ -86,50 +78,32 @@ footer {
   border-top: 1px solid var(--color-border);
   padding: 1.5rem 0 2.5rem;
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.footer-tagline,
-.footer-contact a {
-  font-size: 0.8rem;
-  color: var(--color-muted);
-  text-decoration: none;
-}
-
-.footer-contact a:hover {
-  color: var(--color-text);
-}
-
-/* width: 100% forces a wrap in the flex footer, pushing this onto its own row
-   below the tagline and contact link. Depends on footer having flex-wrap: wrap
-   and this being the third child. */
-.footer-social {
-  width: 100%;
-  font-size: 0.8rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
   text-align: center;
 }
 
-.footer-social a {
+.footer-tagline {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+.footer-links {
+  font-size: 0.8rem;
+}
+
+.footer-links a {
   color: var(--color-muted);
   text-decoration: none;
 }
 
-.footer-social a:hover {
+.footer-links a:hover {
   color: var(--color-text);
 }
 
-.footer-social-sep {
+.footer-sep {
   color: var(--color-border);
   margin: 0 0.35rem;
-}
-
-@media (max-width: 480px) {
-  footer {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.4rem;
-  }
 }
