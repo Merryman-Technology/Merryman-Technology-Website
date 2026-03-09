@@ -103,6 +103,25 @@ footer {
   color: var(--color-text);
 }
 
+.footer-social {
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.footer-social a {
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: var(--color-text);
+}
+
+.footer-social-sep {
+  color: var(--color-border);
+  margin: 0 0.35rem;
+}
+
 @media (max-width: 480px) {
   footer {
     flex-direction: column;
