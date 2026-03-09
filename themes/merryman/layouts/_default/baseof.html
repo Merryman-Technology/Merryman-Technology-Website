@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
-  <meta name="description" content="{{ .Site.Params.shortTagline }}">
+  <meta name="description" content="{{ .Site.Params.tagline }}">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
       {{ block "main" . }}{{ end }}
     </main>
     <footer>
-      <span class="footer-tagline">{{ .Site.Params.shortTagline }}</span>
+      <span class="footer-tagline">{{ .Site.Params.tagline }}</span>
       <span class="footer-contact"><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></span>
       <span class="footer-social">
         {{ with .Site.Params.twitterURL }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Merryman Technology on X">X</a>{{ end }}
