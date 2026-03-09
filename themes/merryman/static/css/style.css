@@ -103,6 +103,9 @@ footer {
   color: var(--color-text);
 }
 
+/* width: 100% forces a wrap in the flex footer, pushing this onto its own row
+   below the tagline and contact link. Depends on footer having flex-wrap: wrap
+   and this being the third child. */
 .footer-social {
   width: 100%;
   font-size: 0.8rem;
