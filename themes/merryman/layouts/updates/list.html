@@ -1,6 +1,9 @@
 {{ define "main" }}
 <section class="updates-list">
-  <h1 class="page-title">Updates</h1>
+  <div class="updates-header">
+    <h1 class="page-title">Updates</h1>
+    <a href="/updates/index.xml" class="rss-link" aria-label="RSS feed">RSS</a>
+  </div>
   {{ range .Pages }}
   <article class="update-item">
     <h2 class="update-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
