@@ -28,7 +28,16 @@
   --color-muted: #6b6b6b;
   --color-border: #e5e5e5;
   --font: "Geist", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
-  --max-width: 640px;
+  --max-width: 980px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0a0a0a;
+    --color-text: #f0f0f0;
+    --color-muted: #888888;
+    --color-border: #252525;
+  }
 }
 
 *, *::before, *::after {
@@ -66,34 +75,97 @@ body {
 
 header {
   padding: 2.5rem 0 0;
-  text-align: center;
 }
 
 .site-name {
-  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-size: 1.5rem;
   font-weight: 600;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   color: var(--color-text);
   text-decoration: none;
 }
 
-/* Hero */
+/* Main */
 
 main {
   flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 4rem 0;
-  text-align: center;
+  padding: 5rem 0 4rem;
 }
 
-.hero .status {
-  font-size: clamp(1rem, 3vw, 1.4rem);
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+/* Hero */
+
+.hero {
+  margin-bottom: 3.5rem;
+}
+
+.hero-headline {
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  color: var(--color-text);
+  margin-bottom: 1.25rem;
+  opacity: 0;
+  animation: fadeUp 0.55s ease forwards;
+}
+
+.hero-description {
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
   color: var(--color-muted);
+  line-height: 1.65;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeUp 0.55s ease 0.1s forwards;
+}
+
+.hero-cta {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 1px;
+  transition: opacity 0.15s ease;
+  opacity: 0;
+  animation: fadeUp 0.55s ease 0.2s forwards;
+}
+
+.hero-cta:hover {
+  opacity: 0.5;
+}
+
+/* Page (single layout) */
+
+.page {
+  padding: 5rem 0 4rem;
+}
+
+.page-title {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 2.5rem;
+}
+
+.page-content {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--color-muted);
+  max-width: 640px;
+}
+
+.page-content p {
+  margin-bottom: 1.25rem;
+}
+
+.page-content a {
+  color: var(--color-text);
+}
+
+.page-content a:hover {
+  opacity: 0.6;
 }
 
 /* Footer */
@@ -135,4 +207,26 @@ footer {
 .footer-sep {
   color: var(--color-border);
   margin: 0 0.35rem;
+}
+
+/* Animations */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-headline,
+  .hero-description,
+  .hero-cta {
+    animation: none;
+    opacity: 1;
+  }
 }

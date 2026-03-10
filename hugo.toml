@@ -7,8 +7,10 @@ theme = 'merryman'
   # No taxonomies for V1 placeholder
 
 [params]
-  tagline = "Good software should make you happy. We're working on it."
-  status       = 'Coming Soon'
+  tagline     = "Good software should make you happy. We're working on it."
+  headline    = "Focused apps for Apple platforms."
+  description = "Merryman Technology builds thoughtful software for the devices you always have with you."
+  coda        = "Check back soon."
   email        = 'hello@merrymantechnology.com'
   twitterURL   = 'https://x.com/MerrymanTech'
   bskyURL      = 'https://bsky.app/profile/merrymantechnology.com'

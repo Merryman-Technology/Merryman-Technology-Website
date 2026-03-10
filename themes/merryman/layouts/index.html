@@ -1,5 +1,7 @@
 {{ define "main" }}
-<div class="hero">
-  <p class="status">{{ .Site.Params.status }}</p>
-</div>
+<section class="hero">
+  <h1 class="hero-headline">{{ .Site.Params.headline }}</h1>
+  <p class="hero-description">{{ .Site.Params.description }}<br><br>{{ .Site.Params.coda }}</p>
+  <a href="mailto:{{ .Site.Params.email }}" class="hero-cta">Say Hello →</a>
+</section>
 {{ end }}
