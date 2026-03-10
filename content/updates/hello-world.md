@@ -7,7 +7,7 @@ author: "Blake Merryman"
 description: "Introducing Merryman Technology — an independent app development shop."
 ---
 
-After seven and a half years at Apple, I left at the end of 2025 to build something of my own. Today, I'm officially introducing Merryman Technology.
+After a decade of building amazing software for other companies, I'm going indie and launching my own company to focus on the experiences I find most interesting: Merryman Technology.
 
 This is a one-person operation — just me, building software for Apple platforms. The kind of software I'd want to use myself: focused, thoughtful, and delightful in the details.
 
