@@ -13,6 +13,10 @@
   <div class="site-wrapper">
     <header>
       <a href="/" class="site-name">{{ .Site.Title }}</a>
+      <nav class="site-nav">
+        <a href="/apps/">Apps</a>
+        <a href="/about/">About</a>
+      </nav>
     </header>
     <main>
       {{ block "main" . }}{{ end }}
@@ -20,8 +24,7 @@
     <footer>
       <span class="footer-tagline">{{ .Site.Params.tagline }}</span>
       <span class="footer-links">
-        <a href="/about/">About</a>
-        <span class="footer-sep">·</span><a href="mailto:{{ .Site.Params.email }}">Contact</a>
+        <a href="mailto:{{ .Site.Params.email }}">Contact</a>
         {{ with .Site.Params.twitterURL }}<span class="footer-sep">·</span><a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Merryman Technology on X">X</a>{{ end }}
         {{ with .Site.Params.bskyURL }}<span class="footer-sep">·</span><a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Merryman Technology on Bluesky">Bluesky</a>{{ end }}
         {{ with .Site.Params.mastodonURL }}<span class="footer-sep">·</span><a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Merryman Technology on Mastodon">Mastodon</a>{{ end }}
