@@ -78,7 +78,8 @@ header {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .site-name {
@@ -92,7 +93,8 @@ header {
 
 .site-nav {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.25rem;
+  flex-wrap: wrap;
 }
 
 .site-nav a {
@@ -107,11 +109,27 @@ header {
   color: var(--color-text);
 }
 
+@media (max-width: 480px) {
+  .site-name {
+    font-size: 1.25rem;
+  }
+
+  .post-meta,
+  .update-meta {
+    flex-wrap: wrap;
+  }
+
+  .post-tags,
+  .update-tags {
+    flex-basis: 100%;
+  }
+}
+
 /* Main */
 
 main {
   flex: 1;
-  padding: 5rem 0 4rem;
+  padding: 2rem 0 4rem;
 }
 
 /* Hero */
@@ -244,6 +262,7 @@ main {
 
 .post-header {
   display: block;
+  padding: 0;
   margin-bottom: 2.5rem;
 }
 
