@@ -1,5 +1,6 @@
 ---
 title: "Apps"
+description: "Apps for Apple platforms from Merryman Technology. Coming soon."
 ---
 
 Nothing here yet — but stay tuned.

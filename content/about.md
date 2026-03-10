@@ -1,5 +1,6 @@
 ---
 title: "About"
+description: "Blake Merryman is an Apple platform developer based in Colorado and the founder of Merryman Technology."
 ---
 
 I'm Blake Merryman, a software developer based in Colorado. I've been writing software for Apple platforms since 2014 — and tinkering as a hobbyist long before that.

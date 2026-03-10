@@ -4,6 +4,7 @@ date: 2026-03-10
 draft: false
 tags: ["announcements"]
 author: "Blake Merryman"
+description: "Introducing Merryman Technology — an independent app development shop."
 ---
 
 After seven and a half years at Apple, I left at the end of 2025 to build something of my own. Today, I'm officially introducing Merryman Technology.
