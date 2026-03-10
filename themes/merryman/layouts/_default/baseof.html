@@ -15,9 +15,9 @@
     <header>
       <a href="/" class="site-name">{{ .Site.Title }}</a>
       <nav class="site-nav">
-        <a href="/apps/">Apps</a>
-        <a href="/updates/">Updates</a>
-        <a href="/about/">About</a>
+        <a href="/apps/" {{ if hasPrefix .RelPermalink "/apps/" }}class="nav-active"{{ end }}>Apps</a>
+        <a href="/updates/" {{ if hasPrefix .RelPermalink "/updates/" }}class="nav-active"{{ end }}>Updates</a>
+        <a href="/about/" {{ if hasPrefix .RelPermalink "/about/" }}class="nav-active"{{ end }}>About</a>
       </nav>
     </header>
     <main>
