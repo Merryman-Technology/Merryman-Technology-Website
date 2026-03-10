@@ -138,7 +138,7 @@ main {
 /* Page (single layout) */
 
 .page {
-  padding: 5rem 0 4rem;
+  padding: 0;
 }
 
 .page-title {
