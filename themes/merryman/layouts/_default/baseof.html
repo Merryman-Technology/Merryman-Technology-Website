@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ .Site.Params.tagline }}">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="/css/style.css">
   <script defer src="/_vercel/insights/script.js"></script>
 </head>
@@ -18,6 +19,7 @@
     </main>
     <footer>
       <span class="footer-tagline">{{ .Site.Params.tagline }}</span>
+      <span class="footer-copyright">&copy; {{ now.Format "2006" }} Merryman Technology, LLC</span>
       <span class="footer-links">
         <a href="mailto:{{ .Site.Params.email }}">Contact</a>
         {{ with .Site.Params.twitterURL }}<span class="footer-sep">·</span><a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Merryman Technology on X">X</a>{{ end }}
