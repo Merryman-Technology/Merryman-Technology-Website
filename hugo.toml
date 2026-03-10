@@ -12,7 +12,5 @@ theme = 'merryman'
   description = "Merryman Technology builds thoughtful software for the devices you always have with you."
   coda        = "Check back soon."
   email        = 'hello@merrymantechnology.com'
-  twitterURL    = 'https://x.com/MerrymanTech'
-  twitterHandle = '@MerrymanTech'
   bskyURL      = 'https://bsky.app/profile/merrymantechnology.com'
   mastodonURL  = 'https://mastodon.social/@merrymantechnology'

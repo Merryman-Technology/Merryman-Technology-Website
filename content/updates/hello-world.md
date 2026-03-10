@@ -13,7 +13,7 @@ This is a one-person operation — just me, building software for Apple platform
 
 I've spent my career caring deeply about the quality of the software I ship. That doesn't change now — if anything, working for myself means I get to hold it to an even higher standard.
 
-There's more to come. If you'd like to follow along, you can find me on [X](https://x.com/MerrymanTech), [Bluesky](https://bsky.app/profile/merrymantechnology.com), and [Mastodon](https://mastodon.social/@merrymantechnology), or subscribe to the [RSS feed](/updates/index.xml) for this page.
+There's more to come. If you'd like to follow along, you can find me on [Bluesky](https://bsky.app/profile/merrymantechnology.com) and [Mastodon](https://mastodon.social/@merrymantechnology), or subscribe to the [RSS feed](/updates/index.xml) for this page.
 
 Thanks for being here early.
 
