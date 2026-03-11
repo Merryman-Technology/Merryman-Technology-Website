@@ -4,7 +4,7 @@ title = 'Merryman Technology'
 theme = 'merryman'
 
 [taxonomies]
-  # No taxonomies for V1 placeholder
+  tag = "tags"
 
 [params]
   tagline     = "Good software should spark a little joy. We're working on it."

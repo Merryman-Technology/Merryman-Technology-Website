@@ -1,23 +1,17 @@
 {{ define "main" }}
 <section class="updates-list">
   <div class="updates-header">
-    <h1 class="page-title">Updates</h1>
-    <a href="/updates/index.xml" class="rss-link" aria-label="RSS feed">RSS</a>
+    <h1 class="page-title">{{ .Title }}</h1>
   </div>
+  <a href="/updates/" class="rss-link tag-back-link">← All updates</a>
   {{ range .Pages }}
   <article class="update-item">
     <h2 class="update-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
     <div class="update-meta">
       <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
       <span class="update-read-time">{{ .ReadingTime }} min read</span>
-      {{ with .GetTerms "tags" }}
-      <span class="update-tags">{{ range . }}<a href="{{ .RelPermalink }}" class="update-tag">{{ .LinkTitle }}</a>{{ end }}</span>
-      {{ end }}
     </div>
   </article>
-  {{ end }}
-  {{ if not .Pages }}
-  <p class="updates-empty">Nothing here yet — check back soon.</p>
   {{ end }}
 </section>
 {{ end }}

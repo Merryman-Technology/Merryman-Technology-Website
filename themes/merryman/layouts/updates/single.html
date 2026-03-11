@@ -11,8 +11,8 @@
       {{ with .Params.author }}<span class="post-author">{{ . }}</span>{{ end }}
       <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
       <span class="post-read-time">{{ .ReadingTime }} min read</span>
-      {{ with .Params.tags }}
-      <span class="post-tags">{{ range . }}<span class="post-tag">{{ . }}</span>{{ end }}</span>
+      {{ with .GetTerms "tags" }}
+      <span class="post-tags">{{ range . }}<a href="{{ .RelPermalink }}" class="post-tag">{{ .LinkTitle }}</a>{{ end }}</span>
       {{ end }}
     </div>
   </header>
