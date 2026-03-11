@@ -9,6 +9,7 @@
     <h2 class="update-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
     <div class="update-meta">
       <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+      <span class="update-read-time">{{ .ReadingTime }} min read</span>
       {{ with .Params.tags }}
       <span class="update-tags">{{ range . }}<span class="update-tag">{{ . }}</span>{{ end }}</span>
       {{ end }}
