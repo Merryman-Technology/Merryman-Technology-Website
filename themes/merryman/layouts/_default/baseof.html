@@ -1,47 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en" }}">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
-  {{ $desc := .Site.Params.tagline }}
-  {{ if not .IsHome }}{{ with .Description }}{{ $desc = . }}{{ end }}{{ end }}
-  <meta name="description" content="{{ $desc }}">
-  <meta property="og:site_name" content="{{ .Site.Title }}">
-  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}">
-  <meta property="og:description" content="{{ $desc }}">
-  <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:type" content="{{ if eq .Type "updates" }}article{{ else }}website{{ end }}">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}">
-  <meta name="twitter:description" content="{{ $desc }}">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} Updates" href="/updates/index.xml">
-  <script defer src="/_vercel/insights/script.js"></script>
+{{ partial "head.html" . }}
 </head>
 <body>
   <div class="site-wrapper">
     <header>
-      <a href="/" class="site-name">{{ .Site.Title }}</a>
-      <nav class="site-nav">
-        <a href="/apps/" {{ if hasPrefix .RelPermalink "/apps/" }}class="nav-active"{{ end }}>Apps</a>
-        <a href="/updates/" {{ if hasPrefix .RelPermalink "/updates/" }}class="nav-active"{{ end }}>Updates</a>
-        <a href="/about/" {{ if hasPrefix .RelPermalink "/about/" }}class="nav-active"{{ end }}>About</a>
-      </nav>
+{{ partial "header.html" . }}
     </header>
     <main>
       {{ block "main" . }}{{ end }}
     </main>
     <footer>
-      <span class="footer-tagline">{{ .Site.Params.tagline }}</span>
-      <span class="footer-links">
-        <a href="mailto:{{ .Site.Params.email }}">Contact</a>
-{{ with .Site.Params.bskyURL }}<span class="footer-sep">·</span><a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Merryman Technology on Bluesky">Bluesky</a>{{ end }}
-        {{ with .Site.Params.mastodonURL }}<span class="footer-sep">·</span><a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Merryman Technology on Mastodon">Mastodon</a>{{ end }}
-        <span class="footer-sep">·</span><a href="/privacy/">Privacy Policy</a>
-      </span>
-      <span class="footer-copyright">&copy; {{ now.Format "2006" }} Merryman Technology, LLC</span>
+{{ partial "footer.html" . }}
     </footer>
   </div>
 </body>
