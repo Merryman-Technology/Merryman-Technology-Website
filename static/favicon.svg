@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    rect { fill: #3a6b8f; }
+    @media (prefers-color-scheme: dark) {
+      rect { fill: #5a96ba; }
+    }
+  </style>
+  <rect width="32" height="32" rx="4"/>
+  <text
+    x="16" y="22"
+    font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif"
+    font-size="13"
+    font-weight="700"
+    fill="#ffffff"
+    text-anchor="middle"
+    letter-spacing="0.5"
+  >MT</text>
+</svg>
