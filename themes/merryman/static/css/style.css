@@ -259,6 +259,30 @@ main {
   padding: 2rem 0;
 }
 
+/* Breadcrumb */
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  margin-bottom: 2rem;
+}
+
+.breadcrumb a {
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: var(--color-text);
+}
+
+.breadcrumb-sep {
+  color: var(--color-border);
+}
+
 /* Post (single updates layout) */
 
 .post-header {
