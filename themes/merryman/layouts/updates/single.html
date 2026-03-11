@@ -1,9 +1,4 @@
 {{ define "main" }}
-<nav class="breadcrumb" aria-label="Breadcrumb">
-  <a href="/updates/">Updates</a>
-  <span class="breadcrumb-sep">›</span>
-  <span>{{ .Title }}</span>
-</nav>
 <article class="post">
   <header class="post-header">
     <h1 class="page-title">{{ .Title }}</h1>
@@ -20,4 +15,9 @@
     {{ .Content }}
   </div>
 </article>
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/updates/">Updates</a>
+  <span class="breadcrumb-sep">›</span>
+  <span>{{ .Title }}</span>
+</nav>
 {{ end }}
