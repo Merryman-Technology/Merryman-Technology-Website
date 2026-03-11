@@ -27,7 +27,7 @@
   --color-text: #1a1a1a;
   --color-muted: #6b6b6b;
   --color-border: #e5e5e5;
-  --color-accent: #3a6b8f;
+  --color-accent: #c2600a;
   --font: "Geist", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
   --max-width: 980px;
 }
@@ -38,7 +38,7 @@
     --color-text: #f0f0f0;
     --color-muted: #888888;
     --color-border: #252525;
-    --color-accent: #5a96ba;
+    --color-accent: #e8923a;
   }
 }
 
@@ -88,7 +88,7 @@ header {
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: -0.02em;
-  color: var(--color-text);
+  color: var(--color-accent);
   text-decoration: none;
   flex-shrink: 0;
 }
@@ -173,17 +173,19 @@ main {
   display: inline-block;
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--color-text);
+  color: var(--color-accent);
   text-decoration: none;
-  border-bottom: 1px solid currentColor;
-  padding-bottom: 1px;
-  transition: opacity 0.15s ease;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.2s ease;
   opacity: 0;
   animation: fadeUp 0.55s ease 0.2s forwards;
 }
 
 .hero-cta:hover {
-  opacity: 0.5;
+  background-size: 100% 1px;
 }
 
 /* Updates list */
