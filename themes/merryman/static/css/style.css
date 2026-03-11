@@ -382,6 +382,14 @@ a.post-tag:hover {
   margin-bottom: 1.25rem;
 }
 
+.page-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  margin: 1.5rem 0;
+}
+
 .page-content a {
   color: var(--color-accent);
   text-decoration: none;
