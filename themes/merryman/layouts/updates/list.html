@@ -6,7 +6,7 @@
   </div>
   {{ range .Pages }}
   <article class="update-item">
-    <h2 class="update-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <h2 class="update-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
     <div class="update-meta">
       <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
       <span class="update-read-time">{{ .ReadingTime }} min read</span>
