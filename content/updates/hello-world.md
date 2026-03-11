@@ -7,9 +7,9 @@ author: "Blake Merryman"
 description: "Introducing Merryman Technology — an independent app development company."
 ---
 
-After a decade of building cool software for other companies, I'm going indie and launching my own company to focus on the experiences I find most interesting: Merryman Technology.
+After a decade of building cool software for other companies, I'm going indie and launching my own company to focus on the experiences I find most interesting. Introducing Merryman Technology.
 
-This is a one-person operation — just me, building software for Apple platforms. The kind of software I'd want to use myself: focused, thoughtful, and delightful in the details.
+This is a one-person operation — just me, building software for Apple platforms. The kind of software I want to use myself: focused, thoughtful, and delightful in the details.
 
 I've spent my career caring deeply about the quality of the software I ship. That doesn't change now — if anything, working for myself means I get to hold it to an even higher standard.
 
