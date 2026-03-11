@@ -1,9 +1,9 @@
-      <span class="footer-tagline">{{ .Site.Params.tagline }}</span>
+      <span class="footer-tagline">{{ .Site.Params.taglineHTML | safeHTML }}</span>
       <span class="footer-links">
         <a href="mailto:{{ .Site.Params.email }}">Contact</a>
 {{ with .Site.Params.bskyURL }}<span class="footer-sep">·</span><a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Merryman Technology on Bluesky">Bluesky</a>{{ end }}
         {{ with .Site.Params.mastodonURL }}<span class="footer-sep">·</span><a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Merryman Technology on Mastodon">Mastodon</a>{{ end }}
         <span class="footer-sep">·</span><a href="/privacy/">Privacy Policy</a>
-        <span class="footer-sep">·</span><a href="/about-this-site/">About This Site</a>
       </span>
       <span class="footer-copyright">&copy; {{ now.Format "2006" }} Merryman Technology, LLC</span>
+      <a href="/about-this-site/" class="footer-about-link">About This Site</a>

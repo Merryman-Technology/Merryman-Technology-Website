@@ -8,6 +8,7 @@ theme = 'merryman'
 
 [params]
   tagline     = "Good software should spark a little joy. We're working on it."
+  taglineHTML = "Good software should spark a little joy. We're&nbsp;working&nbsp;on&nbsp;it."
   headline    = "Focused apps for Apple platforms."
   description = "Merryman Technology builds thoughtful software for the devices you always have with you."
   coda        = "Check back soon."
