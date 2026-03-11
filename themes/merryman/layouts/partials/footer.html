@@ -4,5 +4,6 @@
 {{ with .Site.Params.bskyURL }}<span class="footer-sep">·</span><a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Merryman Technology on Bluesky">Bluesky</a>{{ end }}
         {{ with .Site.Params.mastodonURL }}<span class="footer-sep">·</span><a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Merryman Technology on Mastodon">Mastodon</a>{{ end }}
         <span class="footer-sep">·</span><a href="/privacy/">Privacy Policy</a>
+        <span class="footer-sep">·</span><a href="/about-this-site/">About This Site</a>
       </span>
       <span class="footer-copyright">&copy; {{ now.Format "2006" }} Merryman Technology, LLC</span>
