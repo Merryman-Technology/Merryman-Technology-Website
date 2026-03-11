@@ -17,4 +17,6 @@ There's more to come. If you'd like to follow along, you can find me on [Bluesky
 
 Thanks for being here early.
 
+*Good software should spark a little joy. I'm working on it.*
+
 — Blake
