@@ -118,6 +118,7 @@ header {
 
 .site-nav a.nav-active {
   color: var(--color-accent);
+  background-size: 100% 1px;
 }
 
 @media (max-width: 480px) {
