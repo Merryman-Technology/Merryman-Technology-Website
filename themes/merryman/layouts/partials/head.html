@@ -12,6 +12,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}">
   <meta name="twitter:description" content="{{ $desc }}">
+  <link rel="me" href="{{ .Site.Params.mastodonURL }}">
+  {{ if eq .Type "updates" }}<meta name="fediverse:creator" content="{{ .Site.Params.mastodonHandle }}">{{ end }}
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="/css/style.css">
