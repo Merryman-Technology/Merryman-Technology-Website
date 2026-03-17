@@ -4,7 +4,8 @@ date: 2026-03-10
 draft: false
 tags: ["announcements"]
 author: "Blake Merryman"
-description: "Introducing Merryman Technology — an independent app development company."
+description: "After a decade of building software professionally, Blake Merryman is going indie with Merryman Technology — building focused, thoughtful apps for Apple platforms."
+summary: "After a decade of building software for other companies, I'm going indie. Merryman Technology is a one-person operation dedicated to building focused, thoughtful software for Apple platforms."
 ---
 
 After a decade of building software for other companies, I'm going indie! I'm launching Merryman Technology to focus on the problems that I find most interesting.
