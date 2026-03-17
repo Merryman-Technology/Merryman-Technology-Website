@@ -2,7 +2,7 @@
 title: '{{ replace .File.ContentBaseName "-" " " | title }}'
 date: '{{ .Date }}'
 draft: true
-author: "Blake Merryman"
+author: Blake Merryman
 description: ""
 tags: []
 ---
