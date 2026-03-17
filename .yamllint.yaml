@@ -1,0 +1,20 @@
+extends: default
+
+rules:
+  # Descriptions and summaries can be long
+  line-length:
+    max: 220
+    level: warning
+
+  # Front matter is extracted without the leading ---, so document-start
+  # would always fire. Disable it globally.
+  document-start: disable
+
+  # Only allow true/false, not yes/no/on/off
+  truthy:
+    allowed-values: ['true', 'false']
+    check-keys: false
+
+  # Single space after # is fine
+  comments:
+    min-spaces-from-content: 1
